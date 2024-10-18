@@ -1,0 +1,17 @@
+{
+  "name": "task-force-v2",
+  "version": "1.0.0",
+  "description": "- cd frontend/to-do/\r - npm install",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:frontend": "cd frontend/to-do/ && npm run dev",
+    "start:backend": "cd backend/ && nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
